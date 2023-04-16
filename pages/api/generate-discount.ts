@@ -39,7 +39,7 @@ export default async function generateDiscount(
   }
 
   // Create a new client for the specified shop.
-  const client = new Shopify.Clients.Rest(
+  const client = new Shopify.clients.Rest(
     SHOPIFY_SITE_URL!,
     SHOPIFY_ACCESS_TOKEN!
   );
